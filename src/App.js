@@ -1,17 +1,18 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
+import Login from "./Login";
+import Home1 from "./Home1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Checkout from "./Checkout";
+import Checkout1 from "./Checkout1";
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        {/* <Header /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home1 />} />
+          <Route path="/checkout" element={<Checkout1 />} />
         </Routes>
       </div>
     </BrowserRouter>
